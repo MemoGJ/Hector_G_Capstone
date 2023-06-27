@@ -1,0 +1,80 @@
+---IMPROVEMENT PENDING---
+
+Batting
+name_common,player_ID,year_ID,team_ID,stint_ID,lg_ID - self explanatory
+
+PA - plate appearances
+
+G - games played
+
+Inn - innings played in field
+
+runs_bat - batting runs from our modified wRAA
+
+runs_br - baserunning runs, includes SB and CS runs
+
+runs_dp - runs from avoiding GIDP's in DP situation GB's.
+
+runs_field - total fielding runs from TZR and DRS
+
+runs_infield - defensive dp turn runs
+
+runs_outfield - outfield arm ratings
+
+runs_catcher - catcher defense
+
+runs_good_plays - superlative defensive plays
+
+runs_defense - overall defensive ability
+
+runs_position - runs from the position they play (non-pitching)
+
+runs_position_p - adjustment to zero out the negative contribution of pitcher offense.
+
+runs_replacement - the replacement level adjustment for the league
+
+runs_above_rep - the sum of the above components (double-counting excluded)
+
+runs_above_avg - same as runs_above_rep without runs_replacement
+
+runs_above_avg_off - save as runs_above_avg without defense
+
+runs_above_avg_def - defense plus position
+
+WAA - wins above average
+
+WAA_off - wins above average using runs_above_avg_off
+
+WAA_def - wins above average using runs_above_avg_def
+
+WAR - wins above replacement the final number
+
+WAR_def - just defense and position
+
+WAR_off - just offense, position and replacement level
+
+WAR_rep - WAR attributable to replacement level
+
+salary - what it says
+
+pitcher - yes or no
+
+teamRpG - an avg team runs scored with this player
+
+oppRpG - an avg team runs allowed with this player
+
+oppRpPA_rep - an avg team runs allowed per pa by a replacement player
+
+oppRpG_rep - an avg team runs allowed per g by a replacement player
+
+pyth_exponent - pythagenpat exponent based on run environment for avg teams
+
+pyth_exponent_rep - pythagenpat exponent based on a run environment for a replacement player
+
+waa_win_perc - the win percentage using the pyth_exponent and team and opp R/G
+
+waa_win_perc_off - just for offense
+
+waa_win_perc_def - just for defense
+
+waa_win_perc_rep - how a replacent player would do.
