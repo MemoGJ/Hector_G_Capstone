@@ -1,0 +1,2120 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.21.1217.2252                               -->
+<workbook original-version='18.1' source-build='2021.4.2 (20214.21.1217.2252)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='clean_batting_salary_allPA' inline='true' name='federated.15swj4z1ypov7l1bmvjmo19l36og' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='clean_batting_salary_allPA' name='textscan.0u1hnpm14kxs1e1ejcnzg1x3goev'>
+            <connection class='textscan' directory='C:/Users/Hector G. Guerrero/Documents/BrainStation/Capstone/Clean datasets' filename='clean_batting_salary_allPA.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0u1hnpm14kxs1e1ejcnzg1x3goev' name='clean_batting_salary_allPA.csv' table='[clean_batting_salary_allPA#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='playerID' ordinal='0' />
+            <column datatype='integer' name='yearID' ordinal='1' />
+            <column datatype='integer' name='stint' ordinal='2' />
+            <column datatype='string' name='lgID_x' ordinal='3' />
+            <column datatype='integer' name='G_x' ordinal='4' />
+            <column datatype='integer' name='AB_x' ordinal='5' />
+            <column datatype='integer' name='R_x' ordinal='6' />
+            <column datatype='integer' name='H_x' ordinal='7' />
+            <column datatype='integer' name='2B_x' ordinal='8' />
+            <column datatype='integer' name='3B_x' ordinal='9' />
+            <column datatype='integer' name='HR_x' ordinal='10' />
+            <column datatype='real' name='RBI' ordinal='11' />
+            <column datatype='real' name='SB_x' ordinal='12' />
+            <column datatype='real' name='CS_x' ordinal='13' />
+            <column datatype='integer' name='BB_x' ordinal='14' />
+            <column datatype='real' name='SO_x' ordinal='15' />
+            <column datatype='real' name='IBB' ordinal='16' />
+            <column datatype='real' name='HBP_x' ordinal='17' />
+            <column datatype='real' name='SH' ordinal='18' />
+            <column datatype='real' name='SF_x' ordinal='19' />
+            <column datatype='real' name='GIDP' ordinal='20' />
+            <column datatype='string' name='name_common' ordinal='21' />
+            <column datatype='real' name='age' ordinal='22' />
+            <column datatype='real' name='PA' ordinal='23' />
+            <column datatype='real' name='G_y' ordinal='24' />
+            <column datatype='real' name='Inn' ordinal='25' />
+            <column datatype='real' name='runs_bat' ordinal='26' />
+            <column datatype='real' name='runs_br' ordinal='27' />
+            <column datatype='real' name='runs_dp' ordinal='28' />
+            <column datatype='real' name='runs_field' ordinal='29' />
+            <column datatype='real' name='runs_infield' ordinal='30' />
+            <column datatype='real' name='runs_outfield' ordinal='31' />
+            <column datatype='real' name='runs_catcher' ordinal='32' />
+            <column datatype='real' name='runs_defense' ordinal='33' />
+            <column datatype='real' name='runs_position' ordinal='34' />
+            <column datatype='real' name='runs_position_p' ordinal='35' />
+            <column datatype='real' name='runs_replacement' ordinal='36' />
+            <column datatype='real' name='runs_above_rep' ordinal='37' />
+            <column datatype='real' name='runs_above_avg' ordinal='38' />
+            <column datatype='real' name='runs_above_avg_off' ordinal='39' />
+            <column datatype='real' name='runs_above_avg_def' ordinal='40' />
+            <column datatype='real' name='WAA' ordinal='41' />
+            <column datatype='real' name='WAA_off' ordinal='42' />
+            <column datatype='real' name='WAA_def' ordinal='43' />
+            <column datatype='real' name='WAR' ordinal='44' />
+            <column datatype='real' name='WAR_def' ordinal='45' />
+            <column datatype='real' name='WAR_off' ordinal='46' />
+            <column datatype='real' name='WAR_rep' ordinal='47' />
+            <column datatype='real' name='salary' ordinal='48' />
+            <column datatype='real' name='teamRpG' ordinal='49' />
+            <column datatype='real' name='oppRpG' ordinal='50' />
+            <column datatype='real' name='oppRpPA_rep' ordinal='51' />
+            <column datatype='real' name='oppRpG_rep' ordinal='52' />
+            <column datatype='real' name='pyth_exponent' ordinal='53' />
+            <column datatype='real' name='pyth_exponent_rep' ordinal='54' />
+            <column datatype='real' name='waa_win_perc' ordinal='55' />
+            <column datatype='real' name='waa_win_perc_off' ordinal='56' />
+            <column datatype='real' name='waa_win_perc_def' ordinal='57' />
+            <column datatype='real' name='waa_win_perc_rep' ordinal='58' />
+            <column datatype='real' name='OPS_plus' ordinal='59' />
+            <column datatype='real' name='TOB_lg' ordinal='60' />
+            <column datatype='real' name='TB_lg' ordinal='61' />
+            <column datatype='string' name='birthCountry' ordinal='62' />
+            <column datatype='real' name='weight' ordinal='63' />
+            <column datatype='real' name='height' ordinal='64' />
+            <column datatype='string' name='bats' ordinal='65' />
+            <column datatype='string' name='throws' ordinal='66' />
+            <column datatype='date' name='debut' ordinal='67' />
+            <column datatype='date' name='finalGame' ordinal='68' />
+            <column datatype='string' name='franchID' ordinal='69' />
+            <column datatype='string' name='divID' ordinal='70' />
+            <column datatype='integer' name='Rank' ordinal='71' />
+            <column datatype='integer' name='G' ordinal='72' />
+            <column datatype='real' name='Ghome' ordinal='73' />
+            <column datatype='integer' name='W' ordinal='74' />
+            <column datatype='integer' name='L' ordinal='75' />
+            <column datatype='string' name='DivWin' ordinal='76' />
+            <column datatype='string' name='LgWin' ordinal='77' />
+            <column datatype='string' name='WSWin' ordinal='78' />
+            <column datatype='integer' name='R_y' ordinal='79' />
+            <column datatype='integer' name='AB_y' ordinal='80' />
+            <column datatype='integer' name='H_y' ordinal='81' />
+            <column datatype='integer' name='2B_y' ordinal='82' />
+            <column datatype='integer' name='3B_y' ordinal='83' />
+            <column datatype='integer' name='HR_y' ordinal='84' />
+            <column datatype='integer' name='BB_y' ordinal='85' />
+            <column datatype='real' name='SO_y' ordinal='86' />
+            <column datatype='real' name='SB_y' ordinal='87' />
+            <column datatype='real' name='CS_y' ordinal='88' />
+            <column datatype='real' name='HBP_y' ordinal='89' />
+            <column datatype='real' name='SF_y' ordinal='90' />
+            <column datatype='integer' name='RA' ordinal='91' />
+            <column datatype='integer' name='ER' ordinal='92' />
+            <column datatype='integer' name='DP' ordinal='93' />
+            <column datatype='real' name='FP' ordinal='94' />
+            <column datatype='string' name='name' ordinal='95' />
+            <column datatype='string' name='park' ordinal='96' />
+            <column datatype='real' name='attendance' ordinal='97' />
+            <column datatype='integer' name='BPF' ordinal='98' />
+            <column datatype='integer' name='PPF' ordinal='99' />
+            <column datatype='string' name='teamIDBR' ordinal='100' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0u1hnpm14kxs1e1ejcnzg1x3goev' name='clean_batting_salary_allPA.csv' table='[clean_batting_salary_allPA#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='playerID' ordinal='0' />
+            <column datatype='integer' name='yearID' ordinal='1' />
+            <column datatype='integer' name='stint' ordinal='2' />
+            <column datatype='string' name='lgID_x' ordinal='3' />
+            <column datatype='integer' name='G_x' ordinal='4' />
+            <column datatype='integer' name='AB_x' ordinal='5' />
+            <column datatype='integer' name='R_x' ordinal='6' />
+            <column datatype='integer' name='H_x' ordinal='7' />
+            <column datatype='integer' name='2B_x' ordinal='8' />
+            <column datatype='integer' name='3B_x' ordinal='9' />
+            <column datatype='integer' name='HR_x' ordinal='10' />
+            <column datatype='real' name='RBI' ordinal='11' />
+            <column datatype='real' name='SB_x' ordinal='12' />
+            <column datatype='real' name='CS_x' ordinal='13' />
+            <column datatype='integer' name='BB_x' ordinal='14' />
+            <column datatype='real' name='SO_x' ordinal='15' />
+            <column datatype='real' name='IBB' ordinal='16' />
+            <column datatype='real' name='HBP_x' ordinal='17' />
+            <column datatype='real' name='SH' ordinal='18' />
+            <column datatype='real' name='SF_x' ordinal='19' />
+            <column datatype='real' name='GIDP' ordinal='20' />
+            <column datatype='string' name='name_common' ordinal='21' />
+            <column datatype='real' name='age' ordinal='22' />
+            <column datatype='real' name='PA' ordinal='23' />
+            <column datatype='real' name='G_y' ordinal='24' />
+            <column datatype='real' name='Inn' ordinal='25' />
+            <column datatype='real' name='runs_bat' ordinal='26' />
+            <column datatype='real' name='runs_br' ordinal='27' />
+            <column datatype='real' name='runs_dp' ordinal='28' />
+            <column datatype='real' name='runs_field' ordinal='29' />
+            <column datatype='real' name='runs_infield' ordinal='30' />
+            <column datatype='real' name='runs_outfield' ordinal='31' />
+            <column datatype='real' name='runs_catcher' ordinal='32' />
+            <column datatype='real' name='runs_defense' ordinal='33' />
+            <column datatype='real' name='runs_position' ordinal='34' />
+            <column datatype='real' name='runs_position_p' ordinal='35' />
+            <column datatype='real' name='runs_replacement' ordinal='36' />
+            <column datatype='real' name='runs_above_rep' ordinal='37' />
+            <column datatype='real' name='runs_above_avg' ordinal='38' />
+            <column datatype='real' name='runs_above_avg_off' ordinal='39' />
+            <column datatype='real' name='runs_above_avg_def' ordinal='40' />
+            <column datatype='real' name='WAA' ordinal='41' />
+            <column datatype='real' name='WAA_off' ordinal='42' />
+            <column datatype='real' name='WAA_def' ordinal='43' />
+            <column datatype='real' name='WAR' ordinal='44' />
+            <column datatype='real' name='WAR_def' ordinal='45' />
+            <column datatype='real' name='WAR_off' ordinal='46' />
+            <column datatype='real' name='WAR_rep' ordinal='47' />
+            <column datatype='real' name='salary' ordinal='48' />
+            <column datatype='real' name='teamRpG' ordinal='49' />
+            <column datatype='real' name='oppRpG' ordinal='50' />
+            <column datatype='real' name='oppRpPA_rep' ordinal='51' />
+            <column datatype='real' name='oppRpG_rep' ordinal='52' />
+            <column datatype='real' name='pyth_exponent' ordinal='53' />
+            <column datatype='real' name='pyth_exponent_rep' ordinal='54' />
+            <column datatype='real' name='waa_win_perc' ordinal='55' />
+            <column datatype='real' name='waa_win_perc_off' ordinal='56' />
+            <column datatype='real' name='waa_win_perc_def' ordinal='57' />
+            <column datatype='real' name='waa_win_perc_rep' ordinal='58' />
+            <column datatype='real' name='OPS_plus' ordinal='59' />
+            <column datatype='real' name='TOB_lg' ordinal='60' />
+            <column datatype='real' name='TB_lg' ordinal='61' />
+            <column datatype='string' name='birthCountry' ordinal='62' />
+            <column datatype='real' name='weight' ordinal='63' />
+            <column datatype='real' name='height' ordinal='64' />
+            <column datatype='string' name='bats' ordinal='65' />
+            <column datatype='string' name='throws' ordinal='66' />
+            <column datatype='date' name='debut' ordinal='67' />
+            <column datatype='date' name='finalGame' ordinal='68' />
+            <column datatype='string' name='franchID' ordinal='69' />
+            <column datatype='string' name='divID' ordinal='70' />
+            <column datatype='integer' name='Rank' ordinal='71' />
+            <column datatype='integer' name='G' ordinal='72' />
+            <column datatype='real' name='Ghome' ordinal='73' />
+            <column datatype='integer' name='W' ordinal='74' />
+            <column datatype='integer' name='L' ordinal='75' />
+            <column datatype='string' name='DivWin' ordinal='76' />
+            <column datatype='string' name='LgWin' ordinal='77' />
+            <column datatype='string' name='WSWin' ordinal='78' />
+            <column datatype='integer' name='R_y' ordinal='79' />
+            <column datatype='integer' name='AB_y' ordinal='80' />
+            <column datatype='integer' name='H_y' ordinal='81' />
+            <column datatype='integer' name='2B_y' ordinal='82' />
+            <column datatype='integer' name='3B_y' ordinal='83' />
+            <column datatype='integer' name='HR_y' ordinal='84' />
+            <column datatype='integer' name='BB_y' ordinal='85' />
+            <column datatype='real' name='SO_y' ordinal='86' />
+            <column datatype='real' name='SB_y' ordinal='87' />
+            <column datatype='real' name='CS_y' ordinal='88' />
+            <column datatype='real' name='HBP_y' ordinal='89' />
+            <column datatype='real' name='SF_y' ordinal='90' />
+            <column datatype='integer' name='RA' ordinal='91' />
+            <column datatype='integer' name='ER' ordinal='92' />
+            <column datatype='integer' name='DP' ordinal='93' />
+            <column datatype='real' name='FP' ordinal='94' />
+            <column datatype='string' name='name' ordinal='95' />
+            <column datatype='string' name='park' ordinal='96' />
+            <column datatype='real' name='attendance' ordinal='97' />
+            <column datatype='integer' name='BPF' ordinal='98' />
+            <column datatype='integer' name='PPF' ordinal='99' />
+            <column datatype='string' name='teamIDBR' ordinal='100' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>playerID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[playerID]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>playerID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yearID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[yearID]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>yearID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stint</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stint]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>stint</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lgID_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lgID_x]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>lgID_x</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G_x]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>G_x</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AB_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AB_x]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>AB_x</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R_x]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>R_x</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>H_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[H_x]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>H_x</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2B_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2B_x]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>2B_x</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3B_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[3B_x]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>3B_x</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HR_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HR_x]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>HR_x</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RBI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RBI]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>RBI</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SB_x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SB_x]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>SB_x</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CS_x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CS_x]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>CS_x</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BB_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BB_x]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>BB_x</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SO_x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SO_x]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>SO_x</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IBB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IBB]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>IBB</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBP_x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HBP_x]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>HBP_x</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SH</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SH]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>SH</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SF_x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SF_x]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>SF_x</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GIDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GIDP]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>GIDP</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name_common</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name_common]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>name_common</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PA]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>PA</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G_y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[G_y]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>G_y</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inn</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Inn]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>Inn</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_bat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runs_bat]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>runs_bat</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_br</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runs_br]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>runs_br</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_dp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runs_dp]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>runs_dp</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_field</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runs_field]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>runs_field</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_infield</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runs_infield]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>runs_infield</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_outfield</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runs_outfield]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>runs_outfield</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_catcher</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runs_catcher]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>runs_catcher</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_defense</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runs_defense]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>runs_defense</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_position</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runs_position]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>runs_position</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_position_p</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runs_position_p]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>runs_position_p</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_replacement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runs_replacement]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>runs_replacement</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_above_rep</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runs_above_rep]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>runs_above_rep</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_above_avg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runs_above_avg]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>runs_above_avg</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_above_avg_off</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runs_above_avg_off]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>runs_above_avg_off</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_above_avg_def</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runs_above_avg_def]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>runs_above_avg_def</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WAA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WAA]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>WAA</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WAA_off</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WAA_off]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>WAA_off</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WAA_def</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WAA_def]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>WAA_def</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WAR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WAR]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>WAR</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WAR_def</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WAR_def]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>WAR_def</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WAR_off</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WAR_off]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>WAR_off</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WAR_rep</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WAR_rep]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>WAR_rep</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[salary]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>salary</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>teamRpG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[teamRpG]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>teamRpG</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>oppRpG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[oppRpG]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>oppRpG</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>oppRpPA_rep</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[oppRpPA_rep]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>oppRpPA_rep</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>oppRpG_rep</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[oppRpG_rep]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>oppRpG_rep</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pyth_exponent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pyth_exponent]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>pyth_exponent</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pyth_exponent_rep</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pyth_exponent_rep]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>pyth_exponent_rep</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>waa_win_perc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[waa_win_perc]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>waa_win_perc</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>waa_win_perc_off</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[waa_win_perc_off]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>waa_win_perc_off</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>waa_win_perc_def</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[waa_win_perc_def]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>waa_win_perc_def</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>waa_win_perc_rep</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[waa_win_perc_rep]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>waa_win_perc_rep</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OPS_plus</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OPS_plus]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>OPS_plus</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOB_lg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TOB_lg]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>TOB_lg</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TB_lg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TB_lg]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>TB_lg</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birthCountry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[birthCountry]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>birthCountry</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weight</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weight]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>weight</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>height</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[height]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>height</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bats</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bats]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>bats</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>throws</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[throws]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>throws</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>debut</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[debut]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>debut</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>finalGame</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[finalGame]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>finalGame</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>franchID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[franchID]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>franchID</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>divID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[divID]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>divID</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>G</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ghome</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Ghome]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>Ghome</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>W</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[W]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>W</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>L</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[L]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>L</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DivWin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DivWin]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>DivWin</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LgWin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LgWin]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>LgWin</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WSWin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WSWin]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>WSWin</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R_y]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>R_y</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AB_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AB_y]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>AB_y</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>H_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[H_y]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>H_y</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2B_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2B_y]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>2B_y</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3B_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[3B_y]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>3B_y</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HR_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HR_y]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>HR_y</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BB_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BB_y]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>BB_y</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SO_y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SO_y]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>SO_y</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SB_y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SB_y]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>SB_y</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CS_y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CS_y]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>CS_y</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBP_y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HBP_y]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>HBP_y</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SF_y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SF_y]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>SF_y</remote-alias>
+            <ordinal>90</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RA]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>RA</remote-alias>
+            <ordinal>91</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ER</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ER]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>ER</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DP]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>DP</remote-alias>
+            <ordinal>93</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FP]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>FP</remote-alias>
+            <ordinal>94</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>95</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>park</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[park]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>park</remote-alias>
+            <ordinal>96</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>attendance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[attendance]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>attendance</remote-alias>
+            <ordinal>97</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BPF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BPF]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>BPF</remote-alias>
+            <ordinal>98</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PPF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PPF]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>PPF</remote-alias>
+            <ordinal>99</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>teamIDBR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[teamIDBR]</local-name>
+            <parent-name>[clean_batting_salary_allPA.csv]</parent-name>
+            <remote-alias>teamIDBR</remote-alias>
+            <ordinal>100</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='2B x' datatype='integer' name='[2B_x]' role='measure' type='quantitative' />
+      <column caption='2B y' datatype='integer' name='[2B_y]' role='measure' type='quantitative' />
+      <column caption='3B x' datatype='integer' name='[3B_x]' role='measure' type='quantitative' />
+      <column caption='3B y' datatype='integer' name='[3B_y]' role='measure' type='quantitative' />
+      <column caption='AB x' datatype='integer' name='[AB_x]' role='measure' type='quantitative' />
+      <column caption='AB y' datatype='integer' name='[AB_y]' role='measure' type='quantitative' />
+      <column caption='BB x' datatype='integer' name='[BB_x]' role='measure' type='quantitative' />
+      <column caption='BB y' datatype='integer' name='[BB_y]' role='measure' type='quantitative' />
+      <column caption='CS x' datatype='real' name='[CS_x]' role='measure' type='quantitative' />
+      <column caption='CS y' datatype='real' name='[CS_y]' role='measure' type='quantitative' />
+      <column caption='salary/PA' datatype='real' name='[Calculation_1558245515633602560]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([salary])/SUM([PA])' />
+      </column>
+      <column caption='Div Win' datatype='string' name='[DivWin]' role='dimension' type='nominal' />
+      <column caption='Gidp' datatype='real' name='[GIDP]' role='measure' type='quantitative' />
+      <column caption='G x' datatype='integer' name='[G_x]' role='measure' type='quantitative' />
+      <column caption='G y' datatype='real' name='[G_y]' role='measure' type='quantitative' />
+      <column caption='HBP x' datatype='real' name='[HBP_x]' role='measure' type='quantitative' />
+      <column caption='HBP y' datatype='real' name='[HBP_y]' role='measure' type='quantitative' />
+      <column caption='HR x' datatype='integer' name='[HR_x]' role='measure' type='quantitative' />
+      <column caption='HR y' datatype='integer' name='[HR_y]' role='measure' type='quantitative' />
+      <column caption='H x' datatype='integer' name='[H_x]' role='measure' type='quantitative' />
+      <column caption='H y' datatype='integer' name='[H_y]' role='measure' type='quantitative' />
+      <column caption='Lg Win' datatype='string' name='[LgWin]' role='dimension' type='nominal' />
+      <column caption='OPS plus' datatype='real' name='[OPS_plus]' role='measure' type='quantitative' />
+      <column caption='R x' datatype='integer' name='[R_x]' role='measure' type='quantitative' />
+      <column caption='R y' datatype='integer' name='[R_y]' role='measure' type='quantitative' />
+      <column caption='SB x' datatype='real' name='[SB_x]' role='measure' type='quantitative' />
+      <column caption='SB y' datatype='real' name='[SB_y]' role='measure' type='quantitative' />
+      <column caption='SF x' datatype='real' name='[SF_x]' role='measure' type='quantitative' />
+      <column caption='SF y' datatype='real' name='[SF_y]' role='measure' type='quantitative' />
+      <column caption='SO x' datatype='real' name='[SO_x]' role='measure' type='quantitative' />
+      <column caption='SO y' datatype='real' name='[SO_y]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[Salary (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='5' formula='[salary]' peg='0' size='891420' />
+      </column>
+      <column caption='TB lg' datatype='real' name='[TB_lg]' role='measure' type='quantitative' />
+      <column caption='TOB lg' datatype='real' name='[TOB_lg]' role='measure' type='quantitative' />
+      <column caption='WAA def' datatype='real' name='[WAA_def]' role='measure' type='quantitative' />
+      <column caption='WAA off' datatype='real' name='[WAA_off]' role='measure' type='quantitative' />
+      <column caption='WAR def' datatype='real' name='[WAR_def]' role='measure' type='quantitative' />
+      <column caption='WAR off' datatype='real' name='[WAR_off]' role='measure' type='quantitative' />
+      <column caption='WAR rep' datatype='real' name='[WAR_rep]' role='measure' type='quantitative' />
+      <column caption='WS Win' datatype='string' name='[WSWin]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[Year ID (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[yearID]' peg='0' size='3.68' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='clean_batting_salary_allPA.csv' datatype='table' name='[__tableau_internal_object_id__].[clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <column caption='Attendance' datatype='real' name='[attendance]' role='measure' type='quantitative' />
+      <column caption='Bats' datatype='string' name='[bats]' role='dimension' type='nominal' />
+      <column caption='Birth Country' datatype='string' name='[birthCountry]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Debut' datatype='date' name='[debut]' role='dimension' type='ordinal' />
+      <column caption='Div ID' datatype='string' name='[divID]' role='dimension' type='nominal' />
+      <column caption='Final Game' datatype='date' name='[finalGame]' role='dimension' type='ordinal' />
+      <column caption='Franch ID' datatype='string' name='[franchID]' role='dimension' type='nominal' />
+      <column caption='Height' datatype='real' name='[height]' role='measure' type='quantitative' />
+      <column caption='lgID x' datatype='string' name='[lgID_x]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Name Common' datatype='string' name='[name_common]' role='dimension' type='nominal' />
+      <column caption='Opp Rp G' datatype='real' name='[oppRpG]' role='measure' type='quantitative' />
+      <column caption='oppRpG rep' datatype='real' name='[oppRpG_rep]' role='measure' type='quantitative' />
+      <column caption='oppRpPA rep' datatype='real' name='[oppRpPA_rep]' role='measure' type='quantitative' />
+      <column caption='Park' datatype='string' name='[park]' role='dimension' type='nominal' />
+      <column caption='Player ID' datatype='string' name='[playerID]' role='dimension' type='nominal' />
+      <column caption='Pyth Exponent' datatype='real' name='[pyth_exponent]' role='measure' type='quantitative' />
+      <column caption='Pyth Exponent Rep' datatype='real' name='[pyth_exponent_rep]' role='measure' type='quantitative' />
+      <column caption='Runs Above Avg' datatype='real' name='[runs_above_avg]' role='measure' type='quantitative' />
+      <column caption='Runs Above Avg Def' datatype='real' name='[runs_above_avg_def]' role='measure' type='quantitative' />
+      <column caption='Runs Above Avg Off' datatype='real' name='[runs_above_avg_off]' role='measure' type='quantitative' />
+      <column caption='Runs Above Rep' datatype='real' name='[runs_above_rep]' role='measure' type='quantitative' />
+      <column caption='Runs Bat' datatype='real' name='[runs_bat]' role='measure' type='quantitative' />
+      <column caption='Runs Br' datatype='real' name='[runs_br]' role='measure' type='quantitative' />
+      <column caption='Runs Catcher' datatype='real' name='[runs_catcher]' role='measure' type='quantitative' />
+      <column caption='Runs Defense' datatype='real' name='[runs_defense]' role='measure' type='quantitative' />
+      <column caption='Runs Dp' datatype='real' name='[runs_dp]' role='measure' type='quantitative' />
+      <column caption='Runs Field' datatype='real' name='[runs_field]' role='measure' type='quantitative' />
+      <column caption='Runs Infield' datatype='real' name='[runs_infield]' role='measure' type='quantitative' />
+      <column caption='Runs Outfield' datatype='real' name='[runs_outfield]' role='measure' type='quantitative' />
+      <column caption='Runs Position' datatype='real' name='[runs_position]' role='measure' type='quantitative' />
+      <column caption='Runs Position P' datatype='real' name='[runs_position_p]' role='measure' type='quantitative' />
+      <column caption='Runs Replacement' datatype='real' name='[runs_replacement]' role='measure' type='quantitative' />
+      <column caption='Salary' datatype='real' name='[salary]' role='measure' type='quantitative' />
+      <column caption='Stint' datatype='integer' name='[stint]' role='measure' type='quantitative' />
+      <column caption='Team IDBR' datatype='string' name='[teamIDBR]' role='dimension' type='nominal' />
+      <column caption='Team Rp G' datatype='real' name='[teamRpG]' role='measure' type='quantitative' />
+      <column caption='Throws' datatype='string' name='[throws]' role='dimension' type='nominal' />
+      <column caption='Waa Win Perc' datatype='real' name='[waa_win_perc]' role='measure' type='quantitative' />
+      <column caption='Waa Win Perc Def' datatype='real' name='[waa_win_perc_def]' role='measure' type='quantitative' />
+      <column caption='Waa Win Perc Off' datatype='real' name='[waa_win_perc_off]' role='measure' type='quantitative' />
+      <column caption='Waa Win Perc Rep' datatype='real' name='[waa_win_perc_rep]' role='measure' type='quantitative' />
+      <column caption='Weight' datatype='real' name='[weight]' role='measure' type='quantitative' />
+      <column caption='Year ID' datatype='integer' name='[yearID]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Mexico&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='clean_batting_salary_allPA.csv' id='clean_batting_salary_allPA.csv_D80FF13AFE0248F3913C9105376B0836'>
+            <properties context=''>
+              <relation connection='textscan.0u1hnpm14kxs1e1ejcnzg1x3goev' name='clean_batting_salary_allPA.csv' table='[clean_batting_salary_allPA#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='playerID' ordinal='0' />
+                  <column datatype='integer' name='yearID' ordinal='1' />
+                  <column datatype='integer' name='stint' ordinal='2' />
+                  <column datatype='string' name='lgID_x' ordinal='3' />
+                  <column datatype='integer' name='G_x' ordinal='4' />
+                  <column datatype='integer' name='AB_x' ordinal='5' />
+                  <column datatype='integer' name='R_x' ordinal='6' />
+                  <column datatype='integer' name='H_x' ordinal='7' />
+                  <column datatype='integer' name='2B_x' ordinal='8' />
+                  <column datatype='integer' name='3B_x' ordinal='9' />
+                  <column datatype='integer' name='HR_x' ordinal='10' />
+                  <column datatype='real' name='RBI' ordinal='11' />
+                  <column datatype='real' name='SB_x' ordinal='12' />
+                  <column datatype='real' name='CS_x' ordinal='13' />
+                  <column datatype='integer' name='BB_x' ordinal='14' />
+                  <column datatype='real' name='SO_x' ordinal='15' />
+                  <column datatype='real' name='IBB' ordinal='16' />
+                  <column datatype='real' name='HBP_x' ordinal='17' />
+                  <column datatype='real' name='SH' ordinal='18' />
+                  <column datatype='real' name='SF_x' ordinal='19' />
+                  <column datatype='real' name='GIDP' ordinal='20' />
+                  <column datatype='string' name='name_common' ordinal='21' />
+                  <column datatype='real' name='age' ordinal='22' />
+                  <column datatype='real' name='PA' ordinal='23' />
+                  <column datatype='real' name='G_y' ordinal='24' />
+                  <column datatype='real' name='Inn' ordinal='25' />
+                  <column datatype='real' name='runs_bat' ordinal='26' />
+                  <column datatype='real' name='runs_br' ordinal='27' />
+                  <column datatype='real' name='runs_dp' ordinal='28' />
+                  <column datatype='real' name='runs_field' ordinal='29' />
+                  <column datatype='real' name='runs_infield' ordinal='30' />
+                  <column datatype='real' name='runs_outfield' ordinal='31' />
+                  <column datatype='real' name='runs_catcher' ordinal='32' />
+                  <column datatype='real' name='runs_defense' ordinal='33' />
+                  <column datatype='real' name='runs_position' ordinal='34' />
+                  <column datatype='real' name='runs_position_p' ordinal='35' />
+                  <column datatype='real' name='runs_replacement' ordinal='36' />
+                  <column datatype='real' name='runs_above_rep' ordinal='37' />
+                  <column datatype='real' name='runs_above_avg' ordinal='38' />
+                  <column datatype='real' name='runs_above_avg_off' ordinal='39' />
+                  <column datatype='real' name='runs_above_avg_def' ordinal='40' />
+                  <column datatype='real' name='WAA' ordinal='41' />
+                  <column datatype='real' name='WAA_off' ordinal='42' />
+                  <column datatype='real' name='WAA_def' ordinal='43' />
+                  <column datatype='real' name='WAR' ordinal='44' />
+                  <column datatype='real' name='WAR_def' ordinal='45' />
+                  <column datatype='real' name='WAR_off' ordinal='46' />
+                  <column datatype='real' name='WAR_rep' ordinal='47' />
+                  <column datatype='real' name='salary' ordinal='48' />
+                  <column datatype='real' name='teamRpG' ordinal='49' />
+                  <column datatype='real' name='oppRpG' ordinal='50' />
+                  <column datatype='real' name='oppRpPA_rep' ordinal='51' />
+                  <column datatype='real' name='oppRpG_rep' ordinal='52' />
+                  <column datatype='real' name='pyth_exponent' ordinal='53' />
+                  <column datatype='real' name='pyth_exponent_rep' ordinal='54' />
+                  <column datatype='real' name='waa_win_perc' ordinal='55' />
+                  <column datatype='real' name='waa_win_perc_off' ordinal='56' />
+                  <column datatype='real' name='waa_win_perc_def' ordinal='57' />
+                  <column datatype='real' name='waa_win_perc_rep' ordinal='58' />
+                  <column datatype='real' name='OPS_plus' ordinal='59' />
+                  <column datatype='real' name='TOB_lg' ordinal='60' />
+                  <column datatype='real' name='TB_lg' ordinal='61' />
+                  <column datatype='string' name='birthCountry' ordinal='62' />
+                  <column datatype='real' name='weight' ordinal='63' />
+                  <column datatype='real' name='height' ordinal='64' />
+                  <column datatype='string' name='bats' ordinal='65' />
+                  <column datatype='string' name='throws' ordinal='66' />
+                  <column datatype='date' name='debut' ordinal='67' />
+                  <column datatype='date' name='finalGame' ordinal='68' />
+                  <column datatype='string' name='franchID' ordinal='69' />
+                  <column datatype='string' name='divID' ordinal='70' />
+                  <column datatype='integer' name='Rank' ordinal='71' />
+                  <column datatype='integer' name='G' ordinal='72' />
+                  <column datatype='real' name='Ghome' ordinal='73' />
+                  <column datatype='integer' name='W' ordinal='74' />
+                  <column datatype='integer' name='L' ordinal='75' />
+                  <column datatype='string' name='DivWin' ordinal='76' />
+                  <column datatype='string' name='LgWin' ordinal='77' />
+                  <column datatype='string' name='WSWin' ordinal='78' />
+                  <column datatype='integer' name='R_y' ordinal='79' />
+                  <column datatype='integer' name='AB_y' ordinal='80' />
+                  <column datatype='integer' name='H_y' ordinal='81' />
+                  <column datatype='integer' name='2B_y' ordinal='82' />
+                  <column datatype='integer' name='3B_y' ordinal='83' />
+                  <column datatype='integer' name='HR_y' ordinal='84' />
+                  <column datatype='integer' name='BB_y' ordinal='85' />
+                  <column datatype='real' name='SO_y' ordinal='86' />
+                  <column datatype='real' name='SB_y' ordinal='87' />
+                  <column datatype='real' name='CS_y' ordinal='88' />
+                  <column datatype='real' name='HBP_y' ordinal='89' />
+                  <column datatype='real' name='SF_y' ordinal='90' />
+                  <column datatype='integer' name='RA' ordinal='91' />
+                  <column datatype='integer' name='ER' ordinal='92' />
+                  <column datatype='integer' name='DP' ordinal='93' />
+                  <column datatype='real' name='FP' ordinal='94' />
+                  <column datatype='string' name='name' ordinal='95' />
+                  <column datatype='string' name='park' ordinal='96' />
+                  <column datatype='real' name='attendance' ordinal='97' />
+                  <column datatype='integer' name='BPF' ordinal='98' />
+                  <column datatype='integer' name='PPF' ordinal='99' />
+                  <column datatype='string' name='teamIDBR' ordinal='100' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_batting_salary_allPA' name='federated.15swj4z1ypov7l1bmvjmo19l36og' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15swj4z1ypov7l1bmvjmo19l36og'>
+            <column datatype='real' name='[PA]' role='measure' type='quantitative' />
+            <column-instance column='[yearID]' derivation='CountD' name='[ctd:yearID:qk]' pivot='key' type='quantitative' />
+            <column caption='Name Common' datatype='string' name='[name_common]' role='dimension' type='nominal' />
+            <column-instance column='[name_common]' derivation='None' name='[none:name_common:nk]' pivot='key' type='nominal' />
+            <column caption='Salary' datatype='real' name='[salary]' role='measure' type='quantitative' />
+            <column-instance column='[PA]' derivation='Sum' name='[sum:PA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[salary]' derivation='Sum' name='[sum:salary:qk]' pivot='key' type='quantitative' />
+            <column caption='Year ID' datatype='integer' name='[yearID]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.15swj4z1ypov7l1bmvjmo19l36og].[none:name_common:nk]' />
+              <lod column='[federated.15swj4z1ypov7l1bmvjmo19l36og].[none:name_common:nk]' />
+              <tooltip column='[federated.15swj4z1ypov7l1bmvjmo19l36og].[ctd:yearID:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.15swj4z1ypov7l1bmvjmo19l36og].[sum:salary:qk]</rows>
+        <cols>[federated.15swj4z1ypov7l1bmvjmo19l36og].[sum:PA:qk]</cols>
+      </table>
+      <simple-id uuid='{0D24B1EE-0F15-4FC4-AE33-5297C9AE6F9A}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_batting_salary_allPA' name='federated.15swj4z1ypov7l1bmvjmo19l36og' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15swj4z1ypov7l1bmvjmo19l36og'>
+            <column datatype='real' name='[WAR]' role='measure' type='quantitative' />
+            <column-instance column='[WAR]' derivation='Attribute' name='[attr:WAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[debut]' derivation='Attribute' name='[attr:debut:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[name_common]' derivation='Attribute' name='[attr:name_common:nk]' pivot='key' type='nominal' />
+            <column-instance column='[yearID]' derivation='Attribute' name='[attr:yearID:qk]' pivot='key' type='quantitative' />
+            <column caption='Debut' datatype='date' name='[debut]' role='dimension' type='ordinal' />
+            <column caption='Name Common' datatype='string' name='[name_common]' role='dimension' type='nominal' />
+            <column-instance column='[salary]' derivation='None' name='[none:salary:qk]' pivot='key' type='quantitative' />
+            <column caption='Salary' datatype='real' name='[salary]' role='measure' type='quantitative' />
+            <column caption='Year ID' datatype='integer' name='[yearID]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <tooltip column='[federated.15swj4z1ypov7l1bmvjmo19l36og].[attr:yearID:qk]' />
+              <tooltip column='[federated.15swj4z1ypov7l1bmvjmo19l36og].[attr:debut:ok]' />
+              <tooltip column='[federated.15swj4z1ypov7l1bmvjmo19l36og].[attr:name_common:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.15swj4z1ypov7l1bmvjmo19l36og].[none:salary:qk]</rows>
+        <cols>[federated.15swj4z1ypov7l1bmvjmo19l36og].[attr:WAR:qk]</cols>
+      </table>
+      <simple-id uuid='{AC917FB1-883A-42B3-ABF3-9AB88E48D45E}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_batting_salary_allPA' name='federated.15swj4z1ypov7l1bmvjmo19l36og' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15swj4z1ypov7l1bmvjmo19l36og'>
+            <column datatype='real' name='[PA]' role='measure' type='quantitative' />
+            <column-instance column='[debut]' derivation='Attribute' name='[attr:debut:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[PA]' derivation='Avg' name='[avg:PA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[salary]' derivation='Avg' name='[avg:salary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[yearID]' derivation='CountD' name='[ctd:yearID:qk]' pivot='key' type='quantitative' />
+            <column caption='Debut' datatype='date' name='[debut]' role='dimension' type='ordinal' />
+            <column caption='Name Common' datatype='string' name='[name_common]' role='dimension' type='nominal' />
+            <column-instance column='[name_common]' derivation='None' name='[none:name_common:nk]' pivot='key' type='nominal' />
+            <column caption='Salary' datatype='real' name='[salary]' role='measure' type='quantitative' />
+            <column caption='Year ID' datatype='integer' name='[yearID]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15swj4z1ypov7l1bmvjmo19l36og].[none:name_common:nk]' />
+              <tooltip column='[federated.15swj4z1ypov7l1bmvjmo19l36og].[ctd:yearID:qk]' />
+              <tooltip column='[federated.15swj4z1ypov7l1bmvjmo19l36og].[attr:debut:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.15swj4z1ypov7l1bmvjmo19l36og].[avg:salary:qk]</rows>
+        <cols>[federated.15swj4z1ypov7l1bmvjmo19l36og].[avg:PA:qk]</cols>
+      </table>
+      <simple-id uuid='{40549978-9993-475D-8913-EF214D531FD7}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_batting_salary_allPA' name='federated.15swj4z1ypov7l1bmvjmo19l36og' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15swj4z1ypov7l1bmvjmo19l36og'>
+            <column datatype='integer' name='[W]' role='measure' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column caption='Salary' datatype='real' name='[salary]' role='measure' type='quantitative' />
+            <column-instance column='[W]' derivation='Sum' name='[sum:W:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[salary]' derivation='Sum' name='[sum:salary:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.15swj4z1ypov7l1bmvjmo19l36og].[none:name:nk]' />
+              <lod column='[federated.15swj4z1ypov7l1bmvjmo19l36og].[none:name:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.84558010101318359' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15swj4z1ypov7l1bmvjmo19l36og].[sum:salary:qk]</rows>
+        <cols>[federated.15swj4z1ypov7l1bmvjmo19l36og].[sum:W:qk]</cols>
+      </table>
+      <simple-id uuid='{53DBA5EB-72DE-445D-A49B-BE4C6AD6030F}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_batting_salary_allPA' name='federated.15swj4z1ypov7l1bmvjmo19l36og' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15swj4z1ypov7l1bmvjmo19l36og'>
+            <column caption='G x' datatype='integer' name='[G_x]' role='measure' type='quantitative' />
+            <column-instance column='[debut]' derivation='Attribute' name='[attr:debut:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[salary]' derivation='Avg' name='[avg:salary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[yearID]' derivation='CountD' name='[ctd:yearID:qk]' pivot='key' type='quantitative' />
+            <column caption='Debut' datatype='date' name='[debut]' role='dimension' type='ordinal' />
+            <column caption='Name Common' datatype='string' name='[name_common]' role='dimension' type='nominal' />
+            <column-instance column='[name_common]' derivation='None' name='[none:name_common:nk]' pivot='key' type='nominal' />
+            <column caption='Salary' datatype='real' name='[salary]' role='measure' type='quantitative' />
+            <column-instance column='[G_x]' derivation='Sum' name='[sum:G_x:qk]' pivot='key' type='quantitative' />
+            <column caption='Year ID' datatype='integer' name='[yearID]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.15swj4z1ypov7l1bmvjmo19l36og].[none:name_common:nk]' />
+              <tooltip column='[federated.15swj4z1ypov7l1bmvjmo19l36og].[attr:debut:ok]' />
+              <tooltip column='[federated.15swj4z1ypov7l1bmvjmo19l36og].[sum:G_x:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.15swj4z1ypov7l1bmvjmo19l36og].[avg:salary:qk]</rows>
+        <cols>[federated.15swj4z1ypov7l1bmvjmo19l36og].[ctd:yearID:qk]</cols>
+      </table>
+      <simple-id uuid='{1C3F478D-65FC-4BEF-9114-D84355A95EF3}' />
+    </worksheet>
+    <worksheet name='Year/Salary'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Year vs Avg Salaray per player</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_batting_salary_allPA' name='federated.15swj4z1ypov7l1bmvjmo19l36og' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15swj4z1ypov7l1bmvjmo19l36og'>
+            <column-instance column='[salary]' derivation='Avg' name='[avg:salary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[yearID]' derivation='None' name='[none:yearID:ok]' pivot='key' type='ordinal' />
+            <column caption='Salary' datatype='real' name='[salary]' role='measure' type='quantitative' />
+            <column caption='Year ID' datatype='integer' name='[yearID]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.15swj4z1ypov7l1bmvjmo19l36og].[avg:salary:qk]</rows>
+        <cols>[federated.15swj4z1ypov7l1bmvjmo19l36og].[none:yearID:ok]</cols>
+      </table>
+      <simple-id uuid='{927F58A6-A184-41AA-B266-EF243A3C428A}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='44'>
+    <window class='worksheet' name='Year/Salary'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{D92A2B49-8196-437F-B463-7BF84DFD745F}' />
+    </window>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.15swj4z1ypov7l1bmvjmo19l36og].[none:name_common:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{C07D4000-64B1-48E3-B80E-11438A429C40}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.15swj4z1ypov7l1bmvjmo19l36og].[none:name_common:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2E93AA04-E5C2-4859-ABE2-1EF5997B160A}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{173ECC57-471A-4F48-B64F-D4FEBD2C29E3}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='197'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='45'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='107'>
+            <card pane-specification-id='0' param='[federated.15swj4z1ypov7l1bmvjmo19l36og].[none:name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D9E73CB9-063B-4210-B9F4-BB57670ED3C6}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B5A44082-6DFE-43A1-A760-157BBCF33316}' />
+    </window>
+  </windows>
+</workbook>
