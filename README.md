@@ -1,8 +1,9 @@
 # Hector_G_Capstone
 # Predicting MLB Player Salaries: A Batting Performance Analysis
-### An In-Depth Exploratory Analysis of Factors Influencing Player Compensation
+## An In-Depth Exploratory Analysis of Factors Influencing Player Compensation
 
 Author: Hector Guerrero
+---
 
 ### Project Description
 A brief overview of the project, its purpose, and its outcomes. Why you chose to work on this project and what you aimed to learn or accomplish.
