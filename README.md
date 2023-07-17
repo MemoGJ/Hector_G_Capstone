@@ -2,7 +2,7 @@
 # Predicting MLB Player Salaries: A Batting Performance Analysis
 ## An In-Depth Exploratory Analysis of Factors Influencing Player Compensation
 
-Author: Hector Guerrero
+#### Author: Hector Guerrero
 ---
 
 ### Project Description
