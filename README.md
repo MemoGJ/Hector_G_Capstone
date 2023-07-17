@@ -1,4 +1,7 @@
 # Hector_G_Capstone
+# Predicting MLB Player Salaries: A Batting Performance Analysis
+
+Author: Hector Guerrero
 
 ### Resources 
 - Datsets
