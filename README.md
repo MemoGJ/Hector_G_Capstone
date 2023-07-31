@@ -9,11 +9,11 @@
 In this project, "Predicting MLB Player Salaries: A Batting Performance Analysis," we aim to build a model that accurately predicts Major League Baseball player salaries.
 
 ### Dataset
-WAR Dataset (Baseball Reference): 121,375 rows, 48 columns. Covers all parts of player performance, including batting and pitching.
-Batting Dataset (baseballdatabank - GitHub): 112,184 rows, 22 columns. Focuses on batting statistics for each season.
-People Dataset (baseballdatabank - GitHub): 20,811 rows, 24 columns. Contains players' biographical details.
-Salary Dataset (baseballdatabank - GitHub): 46,450 rows, 14 columns. Shows player salaries from 1985 to 2022, crucial for our analysis.
-Teams Dataset (baseballdatabank - GitHub): 3,015 rows, 47 columns. Offers team-based statistics for each season.
+- WAR Dataset (Baseball Reference): 121,375 rows, 48 columns. Covers all parts of player performance, including batting and pitching.
+- Batting Dataset (baseballdatabank - GitHub): 112,184 rows, 22 columns. Focuses on batting statistics for each season.
+- People Dataset (baseballdatabank - GitHub): 20,811 rows, 24 columns. Contains players' biographical details.
+- Salary Dataset (baseballdatabank - GitHub): 46,450 rows, 14 columns. Shows player salaries from 1985 to 2022, crucial for our analysis.
+- Teams Dataset (baseballdatabank - GitHub): 3,015 rows, 47 columns. Offers team-based statistics for each season.
 
 Final Dataset for EDA and modeling: 22,010 Rows, 68 columns
 
